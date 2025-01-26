@@ -83,7 +83,7 @@ def deleteHostEntryFromOnos(hostID):
     url = f"http://{ONOS_IP}:{ONOS_PORT}/onos/v1/hosts/{hostID}"
     auth = (ONOS_USER, ONOS_PASS)
     response = requests.delete(url, auth=auth)
-    print(response.status_code)
+    # print(response.status_code)
 
 
 def shuffleIP(net: Mininet):
