@@ -6,6 +6,7 @@ import socketserver
 DOMAIN_TO_IP = {
     "h2.com.": "10.0.0.2",
     "h1.com.": "10.0.0.1",
+    "abc.com.": "192.168.0.125",
 }
 
 

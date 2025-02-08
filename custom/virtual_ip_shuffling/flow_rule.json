@@ -1,0 +1,23 @@
+{
+    "priority": 40000,
+    "timeout": 0,
+    "isPermanent": true,
+    "deviceId": "of:0000000000000001",
+    "selector": {
+        "criteria": [
+            {
+                "type": "IPV4_SRC",
+                "ip": "10.0.0.3/8"
+            }
+        ]
+    },
+    "treatment": {
+        "instructions": [
+            {
+                "type": "L3MODIFICATION",
+                "subtype": "IPV4_SRC",
+                "ip": "1.1.1.1"
+            }
+        ]
+    }
+}
