@@ -10,6 +10,6 @@ choice = input("Enter receiver IP / domain name manually (y / n): ")
 if choice == "y":
     HOST = input("Enter receiver IP / domain name : ")
 
-server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_socket.connect((HOST, 12345))
 server_socket.send(b"hi")
